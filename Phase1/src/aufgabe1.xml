@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rezept>
-	hi
-</rezept>
+<Wohlgeformtheit>
+	WENN ZUM BEISPIEL DER XML HEADER RICHTIG DA IST UND SO
+</Wohlgeformtheit>
+
+<Validität>
+	WENN ALLES GÜLTIG IST
+</Validität>
+
+<Namespaces>
+	OMG IST DOCH KLAR MAN KANN IN VERSCHIEDENEN DOKUMENTEN DEN SELBEN NAMEN VERWENDEN! DANN BRAUCHT MAN NAMESPACES UM SIE ZU UNTERSCHEIDEN!!!
+</Namespaces>
