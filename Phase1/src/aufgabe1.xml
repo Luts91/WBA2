@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Wohlgeformtheit>
-	WENN ZUM BEISPIEL DER XML HEADER RICHTIG DA IST UND SO
-</Wohlgeformtheit>
+Wohlgeformtheit
 
-<Validität>
-	WENN ALLES GÜLTIG IST
-</Validität>
+Am Beginn steht die Seite XML-Deklaration, die den Bezug zu XML herstellt.
+Es gibt mindestens ein Datenelement
+Es gibt bei den Datenelementen ein äußerstes Element (auch als Dokument-Element bezeichnet), das alle anderen Datenelemente enthält
 
-<Namespaces>
-	OMG IST DOCH KLAR MAN KANN IN VERSCHIEDENEN DOKUMENTEN DEN SELBEN NAMEN VERWENDEN! DANN BRAUCHT MAN NAMESPACES UM SIE ZU UNTERSCHEIDEN!!!
-</Namespaces>
+Validität
+
+Der Standard definiert ein XML-Dokument als gültig (oder englisch valid), wenn es wohlgeformt ist, den Verweis auf eine Grammatik enthält und das durch die Grammatik beschriebene Format einhält.
+
+Namespaces
+
+XML-Namensräume werden benutzt, um das Vokabular eines XML-Dokumentes eindeutig zu identifizieren und um in einem einzelnen Dokument mehrere XML-Sprachen zu mischen
