@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "person": {
+      "properties": {
+        
+        "rang" : {
+          "type" : string"
+        }
+
+        "vorname" : {
+          "type" : "string"
+        }
+
+        "nachname" : {
+          "type" : "string"
+        }
+
+        "email" : {
+          "type" : "string"
+        }
+
+        "geburtsdatum" : {
+          "type" : "string"
+        }
+
+        "erfahrung" : {
+          "type" : "string"
+        }
+
+        "schlagzeug" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
