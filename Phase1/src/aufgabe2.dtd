@@ -1,0 +1,12 @@
+<!DOCTYPE Personen
+[
+<!ELEMENT Personen (Person)>
+<!ELEMENT Person (vorname,nachname,email,geburtsdatum,erfahrung,schlagzeug,anmerkungen)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT nachname (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT geburtsdatum (#PCDATA)>
+<!ELEMENT erfahrung (#PCDATA)>
+<!ELEMENT schlagzeug (#PCDATA)>
+<!ELEMENT anmerkungen (#PCDATA)>
+]>
