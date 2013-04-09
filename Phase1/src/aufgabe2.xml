@@ -1,63 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<Personen>
-	<Person Gruppenleiter=true>
-		<Vorname>
-			Lutz
-		</Vorname>
-		
-		<Nachname>
-			Schönfelder
-		</Nachname>
-		
-		<Email>
-			lutz.schoenfelder@gmail.com
-		</Email>
-		
-		<Geburtsdatum>
-			27.05.1991
-		</Geburtsdatum>
-		
-		<Erfahrung>
-			Profi
-		</Erfahrung>
-		
-		<Schlagzeug>
-			Nicht Vorhanden
-		</Schlagzeug>
-		
-		<Anmerkungen>
-			Beste Gruppe
-		</Anmerkungen>
-	</Person>
+
+<xs:element name="Personen">
 	
-	<Person Gruppenleiter=false>
-		<Vorname>
-			Lutz
-		</Vorname>
-		
-		<Nachname>
-			Schönfelder
-		</Nachname>
-		
-		<Email>
-			lutz.schoenfelder@gmail.com
-		</Email>
-		
-		<Geburtsdatum>
-			27.05.1991
-		</Geburtsdatum>
-		
-		<Erfahrung>
-			Profi
-		</Erfahrung>
-		
-		<Schlagzeug>
-			Nicht Vorhanden
-		</Schlagzeug>
-		
-		<Anmerkungen>
-			Beste Gruppe
-		</Anmerkungen>
-	</Person>
-</Personen>
+	<xs:complexType>
+		<xs:element name="Person">			
+			<xs:complexType>
+		   		<xs:sequence>
+		    			<xs:element name="vorname" type="xs:string"/>
+			    		<xs:element name="nachname" type="xs:string"/>
+			    		<xs:element name="heading" type="xs:string"/>
+			    		<xs:element name="body" type="xs:string"/>
+			  	</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:complexType>
+</xs:element>
