@@ -8,10 +8,43 @@
 		<xs:element name="Person">			
 			<xs:complexType>
 		   		<xs:sequence>
+		    			
+		    			<xs:element name="rang"></xs:element>">
+					  <xs:simpleType>
+					    <xs:restriction base="xs:string">
+					      <xs:enumeration value="gruppenleiter"/>
+					      <xs:enumeration value="person"/>
+					    </xs:restriction>
+					  </xs:simpleType>
+					</xs:element>
+		    			
 		    			<xs:element name="vorname" type="xs:string"/>
 			    		<xs:element name="nachname" type="xs:string"/>
-			    		<xs:element name="heading" type="xs:string"/>
-			    		<xs:element name="body" type="xs:string"/>
+			    		<xs:element name="email" type="xs:string"/>
+			    		<xs:element name="geburtsdatum" type="xs:string"/>
+			    		
+			    		<xs:element name="erfahrung">
+					  <xs:simpleType>
+					    <xs:restriction base="xs:string">
+					      <xs:enumeration value="Amateur"/>
+					      <xs:enumeration value="Fortgeschrittener"/>
+					      <xs:enumeration value="Profi"/>
+					    </xs:restriction>
+					  </xs:simpleType>
+					</xs:element> 
+					
+					<xs:element name="schlagzeug"></xs:element>">
+					  <xs:simpleType>
+					    <xs:restriction base="xs:string">
+					      <xs:enumeration value="vorhanden"/>
+					      <xs:enumeration value="nicht vorhanden"/>
+					    </xs:restriction>
+					  </xs:simpleType>
+					</xs:element> 
+					
+					
+			    		<xs:element name="anmerkungen" type="xs:string"/>
+					
 			  	</xs:sequence>
 			</xs:complexType>
 		</xs:element>
