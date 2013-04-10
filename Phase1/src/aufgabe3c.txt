@@ -1,0 +1,17 @@
+Welche Daten müssen in simple und welche in complex-types abgebildet werden?
+
+  Simple: Name, Arbeitszeit, Schwierigkeit, Brennwert, Zubereitung
+  Complex: Rezepte, Rezept, Zutaten, Zutat
+
+Für welche Daten ist die Abbildung in Attributen sinnvoller?
+
+  Einheit und Menge der Zutaten
+
+Welche Datentypen müssen für die Elemente definiert werden?
+
+  String
+
+Welche Restriktionen müssen definiert werden?
+
+  Menge > 0 
+
