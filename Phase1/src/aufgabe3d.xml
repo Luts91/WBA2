@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Rezepte">
+  <xs:complexType>
+    <xs:element name="Rezept">
+      <xs:complexType>
+        <xs:sequence>
+          
+          <xs:element name="zutaten">
+            <xs:complexType>
+              <xs:element name="zutat" type="xs:string">
+                <xs:complexType>
+                  <xs:attribute name="menge">
+                    <xs:restriction base="xs:integer">
+                      <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                  </xs:attribute>    
+                  <xs:attribute name="einheit" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:complexType>
+          </xs:element>
+          
+          <xs:element name="arbeitszeit" type="xs:string">
+          <xs:element name="schwierigkeitsgrad type="xs:string">
+          <xs:element name="brennwert" type="xs:string">
+          <xs:element name="zubereitung" type="xs:string">
+
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element name="Rezept">
+  </xs:complexType>
+</xs:element>
