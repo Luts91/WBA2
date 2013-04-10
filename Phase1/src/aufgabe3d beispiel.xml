@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rezepte>
+
+  <rezept>
+    <name> Lenchen’s Schokoladenkuchen </name>
+    <zutaten> 
+      <zutat menge="200" einheit="g"> butter </zutat>
+      <zutat menge="200" einheit="g"> zucker </zutat>
+      <zutat menge="200" einheit="g"> schokolade, blockschokolade </zutat>
+      <zutat menge="120" einheit="g"> mehl </zutat>
+      <zutat menge="1/2" einheit="tl"> backpulver </zutat>
+      <zutat menge="1" einheit="Pkt."> Vanillezucker </zutat>
+      <zutat menge="4" einheit=""> Ei(er) </zutat>
+    </zutaten>
+
+    <arbeitszeit> ca 1 Std. </arbeitszeit>
+    <schwierigkeitsgrad> normal </schwierigkeitsgrad>
+    <brennwert> 295 kcal </brennwert>
+
+    <zubereitung>
+      Butter und Schokolade im Wasserbad schmelzen. 
+      Eier trennen. Eiweiß steif schlagen.
+      Eigelbe, Zucker und Vanillezucker verrühren. 
+      Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+      Mehl mit dem Backpulver in die Masse sieben
+      und zum Schluss die steifen Eiweiße vorsichtig unterheben. 
+      In eine gut gefettete Form geben. 
+      Bei 180°Grad 40 – 50 Minuten backen.
+    </zubereitung>
+  </rezept>
+
+  <rezept>
+    <name> Pommes </name>
+    <zutaten>
+      <zutat menge="1" einheit="packung"> pommes </zutat>
+    </zutaten>
+
+    <arbeitszeit> ca 1 min. </arbeitszeit>
+    <schwierigkeitsgrad> anfänger </schwierigkeitsgrad>
+    <brennwert> 400 kcal </brennwert>
+
+    <zubereitung>
+      Packung Pommes inne Mircowelle packen
+    </zubereitung>
+  </rezept>
+
+</rezepte>
