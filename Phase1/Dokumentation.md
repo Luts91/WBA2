@@ -159,19 +159,24 @@ Die Zutaten sind unterschiedlich, da für jede Zutat eine andere Menge und Einhe
 Welche Daten müssen in simple und welche in complex-types abgebildet werden?
 
   Simple: Name, Arbeitszeit, Schwierigkeit, Brennwert, Zubereitung
+  
   Complex: Rezepte, Rezept, Zutaten, Zutat
+
 
 Für welche Daten ist die Abbildung in Attributen sinnvoller?
 
   Einheit und Menge der Zutaten, Dateipfad der Bilder
+  
 
 Welche Datentypen müssen für die Elemente definiert werden?
 
   Decimal für die Menge, DateTime für den Zeitpunkt der Kommentare, String für den Rest
+  
 
 Welche Restriktionen müssen definiert werden?
 
   Menge > 0 
+  
   
 ```
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
