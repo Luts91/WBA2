@@ -103,7 +103,7 @@ Das zu XML aquivalente JSON-Dokument:
       		<zutat menge="200" einheit="g"> zucker </zutat>
       		<zutat menge="200" einheit="g"> schokolade, blockschokolade </zutat>
       		<zutat menge="120" einheit="g"> mehl </zutat>
-      		<zutat menge="1/2" einheit="tl"> backpulver </zutat>
+      		<zutat menge="0.5" einheit="tl"> backpulver </zutat>
       		<zutat menge="1" einheit="Pkt."> Vanillezucker </zutat>
       		<zutat menge="4" einheit=""> Ei(er) </zutat>
     	</zutaten>
@@ -120,7 +120,7 @@ Das zu XML aquivalente JSON-Dokument:
       		Mehl mit dem Backpulver in die Masse sieben
       		und zum Schluss die steifen Eiweiße vorsichtig unterheben. 
       		In eine gut gefettete Form geben. 
-      		Bei 180°Grad 40 – 50 Minuten backen.
+      		Bei 180°Grad 40 – 50 Minuten kacken.
     	</zubereitung>
     	
     	<kommentare>
@@ -140,11 +140,86 @@ Das zu XML aquivalente JSON-Dokument:
     			<user> Bossie </user>
     			<zeit> 17.02.2003 09:38 </zeit>
     			<text> Jo Leute checkt mal meine Rezepte aus </text>
-    		</kommentar>
+    		</kommentar> 
     	</kommentare>
 </rezept>
 ```
 
-Hierzu zu sagen ist, dass ich mit bei ``<foto src=""> </foto>`` an dem HTML-Tag ``<img>`` orientiert habe.
+Hierzu zu sagen ist, dass ich mich bei ``<foto src=""> </foto>`` an dem HTML-Tag ``<img>`` orientiert habe.
 
 **b)**
+
+Die Gemeinsamkeiten sind, dass sie alle eine Zubereitung und die Angabe der Arbeitszeit, des Schwierigkeitsgrades
+und des Brennwertes haben.
+
+Die Zutaten sind unterschiedlich, da für jede Zutat eine andere Menge und Einheit erforderlich ist.
+
+**c)**
+
+Welche Daten müssen in simple und welche in complex-types abgebildet werden?
+
+  Simple: Name, Arbeitszeit, Schwierigkeit, Brennwert, Zubereitung
+  Complex: Rezepte, Rezept, Zutaten, Zutat
+
+Für welche Daten ist die Abbildung in Attributen sinnvoller?
+
+  Einheit und Menge der Zutaten, Dateipfad der Bilder
+
+Welche Datentypen müssen für die Elemente definiert werden?
+
+  Decimal für die Menge, DateTime für den Zeitpunkt der Kommentare, String für den Rest
+
+Welche Restriktionen müssen definiert werden?
+
+  Menge > 0 
+  
+```
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="rezept">
+	<xs:complexType><xs:sequence>
+		<xs:element name="name" type="xs:string" />
+		
+		<xs:element name="fotos">
+			<xs:complexType><xs:sequence>
+				<xs:element name="foto" type="xs:string">
+					<xs:complexType>
+						<xs:attribute name="src" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence></xs:complexType>
+		</xs:element>
+		
+		<xs:element name="zutaten">
+			<xs:complexType><xs:sequence>
+				<xs:element name="zutat">
+					<xs:complexType>
+						<xs:attribute name="menge" type="xs:decimal">
+						 	<xs:restriction base="xs:decimal">
+                      						<xs:minInclusive value="0" />
+                    					</xs:restriction>
+						</xs:attribute>
+						<xs:attibute name="einheit" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence></xs:comlexType>
+		</xs:element>
+		
+		<xs:element name="arbeitszeit" type="xs:string"/>
+		<xs:element name="schwierigkeitsgrad" type="xs:string"/>
+		<xs:element name="brennwert" type="xs:string"/>
+		<xs:element name="zubereitung" type="xs:string"/>
+		
+		<xs:element name="kommentare">
+			<xs:complexType><xs:sequence>
+				<xs:element name="kommentar">
+					<xs:complexType><xs:sequence>
+						<xs:element name="user" type="xs:string"/>
+						<xs:element name="zeit" type="xs:dateTime"/>
+						<xs:element name="text" type="xs:string"/>
+					</xs:sequence></xs:complexType>
+				</xs:element>
+			</xs:sequence></xs:complexType>
+		</xs:element>
+	</xs:sequence></xs:complexType>
+</xs:element>
+```
