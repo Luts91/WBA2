@@ -179,119 +179,32 @@ Welche Restriktionen müssen definiert werden?
   
   
 **d)** 
- 
-```
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<xs:element name="rezepte"><xs:complexType><xs:sequence>
-<xs:element name="rezept">
-	<xs:complexType><xs:sequence>
-		<xs:element name="name" type="xs:string" />
-		
-		<xs:element name="fotos">
-			<xs:complexType><xs:sequence>
-				<xs:element name="foto">
-					<xs:complexType>
-						<xs:simpleContent>
-     					 		<xs:extension base="xs:string">
-								<xs:attribute name="src" type="xs:string" />
-							</xs:extension>
-						</xs:simpleContent>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence></xs:complexType>
-		</xs:element>
-		
-		<xs:element name="zutaten">
-			<xs:complexType><xs:sequence>
-				<xs:element name="zutat">
-					<xs:complexType>
-						<xs:simpleContent>
-							<xs:extension base="xs:string">
-								<xs:attribute name="menge">
-									<xs:simpleType>
-						 				<xs:restriction base="xs:decimal">
-                      									<xs:minInclusive value="0" />
-                    								</xs:restriction>
-                    							</xs:simpleType>
-								</xs:attribute>
-								<xs:attribute name="einheit" type="xs:string" />
-							</xs:extension>
-						</xs:simpleContent>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence></xs:complexType>
-		</xs:element>
-		
-		<xs:element name="arbeitszeit" type="xs:string"/>
-		<xs:element name="schwierigkeitsgrad" type="xs:string"/>
-		<xs:element name="brennwert" type="xs:string"/>
-		<xs:element name="zubereitung" type="xs:string"/>
-		
-		<xs:element name="kommentare">
-			<xs:complexType><xs:sequence>
-				<xs:element name="kommentar">
-					<xs:complexType><xs:sequence>
-						<xs:element name="user" type="xs:string"/>
-						<xs:element name="zeit" type="xs:dateTime"/>
-						<xs:element name="text" type="xs:string"/>
-					</xs:sequence></xs:complexType>
-				</xs:element>
-			</xs:sequence></xs:complexType>
-		</xs:element>
-	</xs:sequence></xs:complexType>
-</xs:element>
-</xs:sequence></xs:complexType></xs:element>
-</xs:schema>
-```
+https://github.com/Luts91/WBA2/blob/master/Phase1/src/aufgabe3d.xsd
+
 
 Beispieldatensätze:
-```
-<?xml version="1.0" encoding="utf-8"?>
-<rezepte>
-  <rezept>
-    <name>Pommes</name>
-    <fotos>
-      <foto src="foto1.png" >Pommesmann</foto>
-    </fotos>
-    <zutaten>
-      <zutat menge="123" einheit="" >Pommes</zutat>
-    </zutaten>
-    <arbeitszeit>10 min</arbeitszeit>
-    <schwierigkeitsgrad>Einfach</schwierigkeitsgrad>
-    <brennwert>400 kcal</brennwert>
-    <zubereitung>Pommes in die Microwelle legen</zubereitung>
-    <kommentare>
-      <kommentar>
-        <user>str1234</user>
-        <zeit>2012-12-13T12:12:12</zeit>
-        <text>lecker</text>
-      </kommentar>
-    </kommentare>
-  </rezept>
-  
-  <rezept>
-    <name>Butterbrot</name>
-    <fotos>
-      <foto src="foto1.png" >Brotmann</foto>
-    </fotos>
-    <zutaten>
-      <zutat menge="123" einheit="g" >Butter</zutat>
-      <zutat menge="1" einheit=""> Brot</zutat>
-    </zutaten>
-    <arbeitszeit>10 min</arbeitszeit>
-    <schwierigkeitsgrad>Einfach</schwierigkeitsgrad>
-    <brennwert>400 kcal</brennwert>
-    <zubereitung>Butter auf das Brot schmieren</zubereitung>
-    <kommentare>
-      <kommentar>
-        <user>str1234</user>
-        <zeit>2012-12-13T12:12:12</zeit>
-        <text>lecker</text>
-      </kommentar>
-    </kommentare>
-  </rezept>
-</rezepte>
-```
+https://github.com/Luts91/WBA2/blob/master/Phase1/src/aufgabe3d%20beispiel.xml
+
 
 ###Aufgabe 4
 https://github.com/Luts91/WBA2/blob/master/Phase1/src/generated/Rezepte.java
+
+
+###Aufgabe 5
+Prinzipiell kann XML und JSON für jede Art von Datenbeschreibung, -speicherung und -austausch genutzt werden. 
+
+
+JSON: 
+
+-besteht nur aus dem eigentlichen Objekt.
+-wegen der fehlenden schließenden Tags kürzer. 
+-kurze Notation 
+-einfache Handhabung in Javascript
+-kennt grundlegende Datentypen und die Verschachtelungstypen Objekt und Array.
+
+
+XML:
+
+-für die Beschreibung von Schnittstellen
+-nicht auf JS als Programmiersprache beschränkt
+-Implementationen in absolut jeder heute benutzten Programmiersprache.
