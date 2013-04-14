@@ -1,36 +1,21 @@
 {
-  "properties": {
-    "person": {
-      "properties": {
-        
-        "rang" : {
-          "type" : string"
-        }
-
-        "vorname" : {
-          "type" : "string"
-        }
-
-        "nachname" : {
-          "type" : "string"
-        }
-
-        "email" : {
-          "type" : "string"
-        }
-
-        "geburtsdatum" : {
-          "type" : "string"
-        }
-
-        "erfahrung" : {
-          "type" : "string"
-        }
-
-        "schlagzeug" : {
-          "type" : "string"
-        }
-      }
-    }
-  }
+"personen":
+    [{
+        "vorname": "Lutz",
+        "nachname": "Schönfelder",
+        "email": "lutz.schoenfelder@googlemail.com",
+        "geburtsdatum": "27.05.1991",
+        "erfahrung": "Amateur",
+        "schlagzeug": "nicht vorhanden",
+        "anmerkung": ""
+    },
+    {
+        "vorname": "Max",
+        "nachname": "Mustermann",
+        "email": "max.mustermann@googlemail.com",
+        "geburtsdatum": "01.01.1991",
+        "erfahrung": "Amateur",
+        "schlagzeug": "nicht vorhanden",
+        "anmerkung": ""
+    }]
 }

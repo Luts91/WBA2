@@ -1,33 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<rezept>
+    <name> Lenchen's Schokoladenkuchen </name>
 
-<rezepte>
+    <fotos>
+        <foto src="img/foto1"> mrasterix </foto>
+        <foto src="img/foto2"> Lari </foto>
+        <foto src="img/foto60"> Leokardia </foto>
+    </fotos>
 
-  <rezept>
-    <name> Lenchen’s Schokoladenkuchen </name>
     <zutaten> 
-      <zutat menge="200" einheit="g"> butter </zutat>
-      <zutat menge="200" einheit="g"> zucker </zutat>
-      <zutat menge="200" einheit="g"> schokolade, blockschokolade </zutat>
-      <zutat menge="120" einheit="g"> mehl </zutat>
-      <zutat menge="1/2" einheit="tl"> backpulver </zutat>
-      <zutat menge="1" einheit="Pkt."> Vanillezucker </zutat>
-      <zutat menge="4" einheit=""> Ei(er) </zutat>
-    </zutaten>
+            <zutat menge="200" einheit="g"> butter </zutat>
+            <zutat menge="200" einheit="g"> zucker </zutat>
+            <zutat menge="200" einheit="g"> schokolade, blockschokolade </zutat>
+            <zutat menge="120" einheit="g"> mehl </zutat>
+            <zutat menge="0.5" einheit="tl"> backpulver </zutat>
+            <zutat menge="1" einheit="Pkt."> Vanillezucker </zutat>
+            <zutat menge="4" einheit=""> Ei(er) </zutat>
+        </zutaten>
 
-    <arbeitszeit> ca 1 Std. </arbeitszeit>
-    <schwierigkeitsgrad> normal </schwierigkeitsgrad>
-    <brennwert> 295 kcal </brennwert>
+        <arbeitszeit> ca 1 Std. </arbeitszeit>
+        <schwierigkeitsgrad> normal </schwierigkeitsgrad>
+        <brennwert> 295 kcal </brennwert>
 
-    <zubereitung>
-      Butter und Schokolade im Wasserbad schmelzen. 
-      Eier trennen. Eiweiß steif schlagen.
-      Eigelbe, Zucker und Vanillezucker verrühren. 
-      Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
-      Mehl mit dem Backpulver in die Masse sieben
-      und zum Schluss die steifen Eiweiße vorsichtig unterheben. 
-      In eine gut gefettete Form geben. 
-      Bei 180°Grad 40 – 50 Minuten backen.
-    </zubereitung>
-  </rezept>
+        <zubereitung>
+            Butter und Schokolade im Wasserbad schmelzen. 
+            Eier trennen. Eiweiß steif schlagen.
+            Eigelbe, Zucker und Vanillezucker verrühren. 
+            Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+            Mehl mit dem Backpulver in die Masse sieben
+            und zum Schluss die steifen Eiweiße vorsichtig unterheben. 
+            In eine gut gefettete Form geben. 
+            Bei 180°Grad 40 – 50 Minuten kacken.
+        </zubereitung>
 
-</rezepte>
+        <kommentare>
+            <kommentar>
+                <user> swieselchen </user>
+                <zeit> 07.02.2002 18:49 </zeit>
+                <text> Meinem Hund hat es geschmeckt.. </text>
+            </kommentar>
+
+            <kommentar>
+                <user> Mane </user>
+                <zeit> 07.01.2003 15:06 </zeit>
+                <text> Total wiederlich! BAH! </text>
+            </kommentar>
+
+            <kommentar>
+                <user> Bossie </user>
+                <zeit> 17.02.2003 09:38 </zeit>
+                <text> Jo Leute checkt mal meine Rezepte aus </text>
+            </kommentar> 
+        </kommentare>
+</rezept>

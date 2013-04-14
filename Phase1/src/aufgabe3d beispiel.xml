@@ -1,48 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <rezepte>
-
   <rezept>
-    <name> Lenchen’s Schokoladenkuchen </name>
-    <zutaten> 
-      <zutat menge="200" einheit="g"> butter </zutat>
-      <zutat menge="200" einheit="g"> zucker </zutat>
-      <zutat menge="200" einheit="g"> schokolade, blockschokolade </zutat>
-      <zutat menge="120" einheit="g"> mehl </zutat>
-      <zutat menge="1/2" einheit="tl"> backpulver </zutat>
-      <zutat menge="1" einheit="Pkt."> Vanillezucker </zutat>
-      <zutat menge="4" einheit=""> Ei(er) </zutat>
-    </zutaten>
-
-    <arbeitszeit> ca 1 Std. </arbeitszeit>
-    <schwierigkeitsgrad> normal </schwierigkeitsgrad>
-    <brennwert> 295 kcal </brennwert>
-
-    <zubereitung>
-      Butter und Schokolade im Wasserbad schmelzen. 
-      Eier trennen. Eiweiß steif schlagen.
-      Eigelbe, Zucker und Vanillezucker verrühren. 
-      Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
-      Mehl mit dem Backpulver in die Masse sieben
-      und zum Schluss die steifen Eiweiße vorsichtig unterheben. 
-      In eine gut gefettete Form geben. 
-      Bei 180°Grad 40 – 50 Minuten backen.
-    </zubereitung>
-  </rezept>
-
-  <rezept>
-    <name> Pommes </name>
+    <name>Pommes</name>
+    <fotos>
+      <foto src="str1234.png">Lutz</foto>> 
+    </fotos>
     <zutaten>
-      <zutat menge="1" einheit="packung"> pommes </zutat>
+      <zutat menge="123" einheit="" > Pommes</zutat>
     </zutaten>
-
-    <arbeitszeit> ca 1 min. </arbeitszeit>
-    <schwierigkeitsgrad> anfänger </schwierigkeitsgrad>
-    <brennwert> 400 kcal </brennwert>
-
-    <zubereitung>
-      Packung Pommes inne Mircowelle packen
-    </zubereitung>
+    <arbeitszeit>1 min</arbeitszeit>
+    <schwierigkeitsgrad>Leicht</schwierigkeitsgrad>
+    <brennwert>400 kcal</brennwert>
+    <zubereitung>Pommes in die Microwelle tun</zubereitung>
+    <kommentare>
+      <kommentar>
+        <user>str1234</user>
+        <zeit>2012-12-13T12:12:12</zeit>
+        <text>Lecker</text>
+      </kommentar>
+    </kommentare>
   </rezept>
-
+  
+  <rezept>
+    <name>Butterbrot</name>
+    <fotos>
+      <foto src="str1234.png">Lutz</foto>> 
+    </fotos>
+    <zutaten>
+      <zutat menge="100" einheit="g" > Butter</zutat>
+      <zutat menge="1" einheit="">Brot</zutat>
+    </zutaten>
+    <arbeitszeit>1 min</arbeitszeit>
+    <schwierigkeitsgrad>Leicht</schwierigkeitsgrad>
+    <brennwert>400 kcal</brennwert>
+    <zubereitung>Brot auf die Butter legen und umdrehen</zubereitung>
+    <kommentare>
+      <kommentar>
+        <user>str1234</user>
+        <zeit>2012-12-13T12:12:12</zeit>
+        <text>Lecker</text>
+      </kommentar>
+    </kommentare>
+  </rezept>
 </rezepte>
