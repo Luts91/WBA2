@@ -292,3 +292,6 @@ Beispieldatensätze:
   </rezept>
 </rezepte>
 ```
+
+###Aufgabe 4
+https://github.com/Luts91/WBA2/blob/master/Phase1/src/generated/Rezepte.java
