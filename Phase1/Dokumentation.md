@@ -197,14 +197,20 @@ Prinzipiell kann XML und JSON für jede Art von Datenbeschreibung, -speicherung 
 JSON: 
 
 -besteht nur aus dem eigentlichen Objekt.
+
 -wegen der fehlenden schließenden Tags kürzer. 
+
 -kurze Notation 
+
 -einfache Handhabung in Javascript
+
 -kennt grundlegende Datentypen und die Verschachtelungstypen Objekt und Array.
 
 
 XML:
 
 -für die Beschreibung von Schnittstellen
+
 -nicht auf JS als Programmiersprache beschränkt
+
 -Implementationen in absolut jeder heute benutzten Programmiersprache.
